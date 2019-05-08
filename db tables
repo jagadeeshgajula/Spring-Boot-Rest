@@ -1,0 +1,14 @@
+create database plan;
+
+CREATE TABLE `area_info` (
+  `zip_id` bigint(20) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`zip_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `plans_info` (
+  `plan_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `plan_name` varchar(255) NOT NULL,
+  `premium` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`plan_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
