@@ -13,7 +13,7 @@ $.ajax({
 	document.getElementById('1').innerHTML+=
     	`<form action="success.jsp">
     	<div id="1" style="display: inline-block;padding: 10px;">
-        <strong><p id="head2">Minimum Coverage PPO $`+data[i].premium*person+`</p></strong>
+        <strong><p id="head2">`+data[i].plan_Name+` $`+data[i].premium*person+`</p></strong>
         <input type="hidden" name="premium" value="`+data[i].premium*person+`">
         <input type="hidden" name="planName" value="`+data[i].plan_Name+`">
         <button class="button1" id=`+i +` onclick="add(this.id)">Add To Cart</button><br />
